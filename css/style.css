@@ -1,0 +1,370 @@
+/*general page and other info*/
+body {
+background-color: #fefae4;
+text-align: center;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:link {
+    color: #fff5bf; /* New Hyperlink Colour */
+    text-decoration: none; /* to remove underline on all links */
+}
+
+/*header and main navigation section */
+header {
+    display: flex;
+    background-color: #526f6c;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+nav {
+    width: 100%;
+}
+
+.main-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.main-nav a:hover {
+    color: #fff5bf;
+    padding-bottom: 5px;
+    border-bottom: 10px solid #fff5bf;
+    font-size: x-large;
+}
+
+/*footer section */
+footer {
+    background-color: #526f6c;
+    padding: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+
+.footer-sitemap {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sitemap a {
+    color: white;
+    font-size: 18px;
+}
+
+.fa-brands {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: #fff5bf;
+}
+
+.fa-facebook:hover {
+    color: #fff5bf;
+}
+
+.fa-twitter:hover {
+    color: #fff5bf;
+}
+
+/*legal line*/
+.legal-line-container {
+    font-size: small;
+    text-align: center;
+}
+
+/* hero section */
+.hero img {
+    display:block;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.hero .text {
+    position: absolute;
+    color: white;
+    padding: 100px;
+    font-size: 23px;
+    right: 32%;
+    top: 480px;
+    align-items: center;
+    text-align: center;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: right;
+  background-color: #fefae4
+  
+}
+
+.about img{
+    display: flex;
+    justify-content: left;
+    width: 1000px;
+}
+
+.about div {
+padding: 0px}
+
+.about .text {
+  margin: 10px;
+  padding: 120px 50px 50px;
+  font-size: 24px;
+  color: #205f59;
+}
+
+/*Shop */
+
+.shoptitle {
+margin: 10px;
+padding: 20px;
+font-size: 18px;
+color: #205f59;
+}
+
+/* shop form */
+
+.shopitems {
+    flex-direction: row;
+}
+.items {
+    background-color: #fefae4;
+    padding: 30px 400px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: white;
+}
+
+.order-image {
+    position: relative;
+}
+
+.order-image p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 26px;
+    background-color: #205f59;
+    border-radius: 10px;
+    padding: 5px;
+}
+.order-image img {
+    width: 100%;
+}
+
+.order-text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.order-text {
+    font-size: 14px;
+    color: #205f59;
+}
+
+.order-descr p:last-of-type {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.order-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+    display: block;
+}
+
+input {
+    font-size: 25px;
+}
+
+input[type="number"] {
+    border: 1px solid #205f59;
+    padding: 5px;
+    color: #205f59;
+    font-weight: bold;
+}
+
+input[type="number"]:last-of-type {
+    width: 40%;
+}
+
+button {
+    background-color: #205f59;
+    border: 1px #205f59 solid;
+    margin-left: 10px;
+    color: white;
+    padding: 11px 0;
+    width: calc(60% - 15px);
+    font-size: 16px;
+    vertical-align: top;
+}
+
+button:hover {
+    background-color: #4ca9a0;
+    border: 1px #205f59 solid;
+}
+
+/* activities */
+.activitiesdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.activitiesdiv div {
+  padding: 0px;
+  font-size: 24px;
+  color: #205f59;
+  background-color: #fefae4;
+  flex-direction: column;
+}
+
+/* activities */
+.activities {
+  display: flex;              
+  gap: 20px;                 
+  justify-content: center;   
+  align-items: stretch;       
+}
+
+.card {
+  flex: 1;                    
+  max-width: 400px;           
+  display: flex;
+  flex-direction: column;     
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h2 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  margin: 0;
+}
+
+
+/* Cafe */
+
+.cafe {
+  display: flex; 
+  justify-content: center;
+}
+
+.cafe img{
+    display: block;
+    width: 1000px;
+}
+
+.cafe div {
+padding: 0px}
+
+.cafe .text {
+  margin: 10px;
+  padding: 50px;
+  font-size: 24px;
+  color: #205f59;
+}
+
+/*All of this below is the slideshow container modified html from W3 schools*/
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+/* The dots/bullets/indicators */
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px;text-align: center;}
+}
