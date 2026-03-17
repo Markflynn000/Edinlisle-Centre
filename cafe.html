@@ -1,0 +1,130 @@
+<!--- Need to set this data with the start of the document -->
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Edinlisle Centre</title>
+    <meta name="author" content="Mark Flynn">
+    <meta name="description" content="About Page">
+    <meta name="date" content="03/03/2026">
+    <meta name="keywords" content="Edinlisle Centre, Outdoor Centre, Zoo, Scotland, Edinlisle Centre Scotland,">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3830352c3e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<!--- Body begins here -->
+<body>
+    <!---Header must stay for every page-->
+    <header>
+        <a href="index.html"><img class="logo" src="images/Logo.png" alt="The Edinlisle Centre Logo"></a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="cafe.html">Cafe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--- Image Slideshow to begin here. Using code modified from W3 Schools example. I used similar in the Level 5 course too!<!-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <img src="images/cafe.jpg" alt="A picturesque cafe, lit by sunlight. Lots of outdoor seating and plants." style="width:90%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/breakfast.jpg" alt="Eggs on toast, part of the breakfast menu." style="width:90%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/cake.jpg" alt="A delicious looking chocolate cake." style="width:90%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/coffee.jpg" alt="An artisan coffee served on a dark wooden table." style="width:90%">
+    </div>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() { // Again this is also from W3 Schools from the same example as above!
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";   // Hide all slides
+    // There was a previous line about dots in here. More will be explained in my testing & errors document as I ran into problems here.
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}      // Moves to next slide
+
+  slides[slideIndex-1].style.display = "block";  //shows current slide
+  setTimeout(showSlides, 5000);
+}
+</script>
+<!-- Slideshow Container ends here -->
+    <!--Cafe Section Starts-->
+    <main>
+    <div class="cafe">
+    <!--- Similar page layout to about so copying and modifying css from that section-->      
+    <div class="text">
+    <h1>Welcome to the Edinlisle Cafe!</h1>
+    <br>
+    <p>Our farm café is the perfect place to slow down and enjoy the produce we’re so proud of. Using ingredients straight from the shop, we serve a selection of simple, boutique-style meals made fresh each day.</p>
+    <br>
+    <p>From hearty breakfasts with our free-range eggs and locally reared bacon, to light lunches with homemade breads, cheeses and seasonal vegetables, everything is prepared with care and flavour in mind.</p>
+    <br>
+    <p>You’ll also find freshly baked cakes, pastries and barista-style coffee, alongside treats like handmade chocolates, local jams and honey. </p>
+    <br>
+    <p>Whether you’re stopping in after a walk or taking a break from exploring, it’s a cosy spot to sit back and enjoy the best of the farm.</p>    
+    </div> 
+    </div> 
+    </main>
+
+
+    <!---Footer must stay for every page-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-address">
+                <p><b>The Edinlisle Centre</b></p>
+                <p>Abbington Farm</p>
+                <p>Abington, Biggar</p>
+                <p>ML12 6RH</p>
+                <br>
+                <p><b>Tel: </b>01864 502501</p>
+                <p><b>Email: </b><a href="contact@edinlisle.co.uk">contact@edinlisle.co.uk</a></p>
+            </div>
+            <div class="footer-times">
+                <p><b>Opening Hours (Office and Shop) </b></p>
+                <p>Monday to Saturday: 8.00am to 5.00pm</p>
+                <p>Sunday: 9.00am to 4.30pm</p>
+                <br> 
+                <p><b>Opening Hours (Cafe) </b></p>
+                <p>Monday to Saturday: 10.00am to 3.30pm</p>
+                <p>Sunday: 11.00am to 5.00pm</p>
+                <br>
+                
+            </div>
+        </div>
+        <!-- new div class to add a legal line-->
+        <div class="legal-line-container">
+            <br>
+            <p> © Edinlisle Centre Ltd 2026 | All logos and copyrights are used with the permission of their respective owners.</p>
+            <br>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <!--- Footer Ends here -->
+</body>
+</html>
+
+
